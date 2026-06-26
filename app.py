@@ -8,7 +8,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 app = Flask(__name__)
 
 # Load model and tokenizer
-model = tf.keras.models.load_model("simple_rnn_model.h5")
+model = tf.keras.models.load_model("simple_rnn_model.keras")
 with open("tokenizer.pkl", "rb") as f:
     tokenizer = pickle.load(f)
 
